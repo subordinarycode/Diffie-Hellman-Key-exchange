@@ -1,9 +1,13 @@
 #! /bin/env python3 
 
-# Note this is only a proof of concerpt and is not ment to be used for actual encryption purposes
-# The diffie hellman key exchange protocl is ment to be used when keys need to passed over unsecure networks
-# The way the protocol works is by sending the prime number and generator over the unsecure network and calculating a public private key pair using the prime number and generator
+# Note this is only a proof of concerpt and is not ment to be used for actual encryption purposes.
+# The diffie hellman key exchange protocol is ment to be used when keys need to passed over unsecure networks.
+# The way the protocol works is by sending the prime number and generator over the unsecure network and calculating a secret key from the prime number
+# The private key is then used to generate a public key by bringing the generator to the power of the secret key
+# Once both parties have exchanged public keys the are able to derive there encryption key by bringing the other parties public key to the power of there secret key and deviding the resault by the prime number
+# Once this process has completed both parties should now have there encryption keys
 
+ 
 from Crypto.Util import number
 import hashlib
 
