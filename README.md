@@ -2,9 +2,6 @@
 
 This is a proof of concept implementation of the Diffie-Hellman key exchange protocol in Python. It is not meant to be used for actual encryption purposes, but rather to demonstrate how the protocol works.
 
-# Usage
-
-To use this implementation, simply run the diffie-hellman.py file in a Python environment. The script will generate two pairs of public and private keys, one for Bob and one for Charley, and will then use these keys to perform the key exchange. If the key exchange is successful, the script will output the shared session key that can be used for encryption.
 
 # Implementation Details
 
@@ -12,9 +9,7 @@ The implementation uses the Crypto.Util.number module to generate large prime nu
 
 The implementation is commented throughout to explain the various steps of the protocol and the Python code.
 
-# Steps
 
-The Diffie-Hellman key exchange protocol is a method for two parties to agree on a shared secret key over an insecure communication channel. The protocol works as follows:
 
 Step 1
 ---
