@@ -66,7 +66,7 @@ def main():
         # Creating a session key using the shared secrets
         # A session key is a symmetric encryption key that is generated for each session
         charley_session_key = hashlib.sha256(charley_shared_secret_bytes).hexdigest()
-        bob_session_key = x = hashlib.sha256(bob_shared_secret_bytes).hexdigest()
+        bob_session_key = hashlib.sha256(bob_shared_secret_bytes).hexdigest()
 
         # Comparing the session keys to make sure they match
         # If they match, the Diffie-Hellman key exchange is complete
